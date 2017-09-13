@@ -1,1 +1,1 @@
-# tnz
+# TourismNZ

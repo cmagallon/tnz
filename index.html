@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Tourism New Zealand </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="page">
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Pure New Zealand">
+        </a>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/auckland.png" alt="Auckland" class="img-swiper-slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/rotorua.png" alt="Rotorua" class="img-swiper-slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/taupo.png" alt="Taupo" class="img-swiper-slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/wellington.png" alt="Wellington" class="img-swiper-slide">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="planner-welcome">
+        <h1>Kia Ora</h1>
+        <h2>Welcome to the official accommodation website for New Zealand</h2>
+    </div>
+    <div id="form-planner">
+        <form action="a">
+            <h2>Your trip planner</h2>
+            <p>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="David">
+            </p>
+            <p>
+                <label for="last-name">last Name</label>
+                <input type="text" id="last-name" placeholder="O'Connell">
+            </p>
+            <p>
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="david@gmail.co.nz">
+            </p>
+            <p class="form-text_select">On the following section please select your destination, next click on BOOK MY TRIP+ to select how many guest will be and the check in and check out details.</p>
+            <div class="select-container">
+                <select class="selector" id="cities">
+                    <option value="Auckland" selected="selected">Auckland</option>
+                    <option value="Taupo">Taupo</option>
+                    <option value="Rotorua">Rotorua</option>
+                    <option value="Wellington">Wellington</option>
+                </select>
+                <div class="scrollme">
+                    <div class="animateme" data-when="view" data-from="1.55" data-to="0.05" data-scale="0">
+                        <a href="#" class="btn" id="add-trip"> book my trip <span>+</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+            </div>
+            <!--  </p> -->
+            <div class="validation">
+            </div>
+            <div class="booking"> </div>
+            <div class="modal-trip">
+                <h2>Select number of guests <i class="fa fa-users guest"></i>
+                    <small> T&#299;pakohia maha o manuhiri</small>
+                </h2>
+                <div class="input-wrap">
+                    <select class="travelers_selector">
+                        <option id="oneg" value="0" data-index="0">1 guest</option>
+                        <option id="twog" value="1" data-index="1">2 guests</option>
+                        <option id="threeg" value="2" data-index="2">3 guests</option>
+                        <option id="fourg" value="3" data-index="3">4 guests</option>
+                        <option id="fiveg" value="4" data-index="4">5 guests</option>
+                        <option id="sixg" value="5" data-index="5">6 guests</option>
+                    </select>
+                </div>
+                <div id="accomodationone" class="number active input-wrap selected">
+                    <select class="accomodationone">
+                        <option value="78.50" place="Hotel">Hotel $78.50 per night</option>
+                        <option value="30" place="Hostel">Hostel $30 per night</option>
+                        <option value="60" place="House">House $60 per night</option>
+                    </select>
+                </div>
+                <div id="accomodationtwo" class="number input-wrap">
+                    <select class="accomodation two">
+                        <option value="157" place="Hotel">Hotel $157 per night</option>
+                        <option value="60" place="Hostel">Hostel $60 per night</option>
+                        <option value="45" place="Motel">Motel $45 per night</option>
+                        <option value="120" place="House">House $120 per night</option>
+                    </select>
+                </div>
+                <div id="accomodationthree" class="number input-wrap">
+                    <select class="accomodationthree">
+                        <option value="90" place="Hostel">Hostel $90 per night</option>
+                        <option value="67.50" place="Motel">Motel $67.50 per night</option>
+                        <option value="180" place="House">House $180 per night</option>
+                    </select>
+                </div>
+                <div id="accomodationfour" class="number input-wrap">
+                    <select class="accomodationfour">
+                        <option value="120" place="Hostel">Hostel $120 per night</option>
+                        <option value="90" place="Motel">Motel $90 per night</option>
+                        <option value="240" place="House">House $240 per night</option>
+                    </select>
+                </div>
+                <div id="accomodationfive" class="number input-wrap">
+                    <select class="accomodationfive">
+                        <option value="150" place="Hostel">Hostel $150 per night</option>
+                    </select>
+                </div>
+                <div id="accomodationsix" class="number input-wrap">
+                    <select class="accomodationsix">
+                        <option value="180" place="Hostel">Hostel $180 per night</option>
+                    </select>
+                </div>
+                <div class="travelers_calendar">
+                    <p>Check-in
+                        <input type="text" name="Check-in date" id="calendar1" value="MM/DD/YYYY">
+                    </p>
+                    <p>Check-out
+                        <input type="text" name="Check-out date" id="calendar2" value="MM/DD/YYYY">
+                    </p>
+                </div>
+                <div class="btn big close-modal" id="modal-done">Done!</div>
+                <ul class="error-modal"></ul>
+            </div>
+        </form>
+        <div id="map"></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcVRI_mSxWSMy1ItIwa4tVlvdHtbhFNjU&libraries=geometry,places,drawing"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/scrollme/jquery.scrollme.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

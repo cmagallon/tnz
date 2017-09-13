@@ -1,0 +1,451 @@
+@import url("http://fontawesome.io/assets/font-awesome/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css?family=Asap");
+/*reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  font-kerning: normal;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1"; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: asap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative; }
+  body .header {
+    background-color: #1a1a1a;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100px; }
+    body .header .logo {
+      display: inline-block;
+      width: 80%;
+      position: relative; }
+      body .header .logo img {
+        width: 100%; }
+
+.header {
+  background-color: #1a1a1a;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100px; }
+  .header .logo {
+    display: inline-block;
+    width: 420px;
+    position: relative;
+    padding: 30px; }
+    .header .logo img {
+      width: 100%; }
+
+.planner-welcome {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .planner-welcome h1 {
+    font-weight: bold;
+    font-size: 24px; }
+  .planner-welcome h2 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px; }
+
+.planner-form {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column; }
+  .planner-form input {
+    width: 100%; }
+  .planner-form .input-errors {
+    color: #bd2d2d; }
+
+.planner-form_dropdown {
+  display: flex;
+  justify-content: space-between; }
+
+.selector {
+  color: #1a1a1a;
+  background-color: #ffffff; }
+
+.cost-container {
+  width: 100%;
+  height: 900px; }
+
+.trip-details {
+  background-color: #23272f;
+  color: #ffffff;
+  font-size: 28px;
+  border-radius: 8px;
+  width: 700px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10000;
+  margin-left: 100px;
+  margin-top: -2000px;
+  position: fixed; }
+  .trip-details .close {
+    display: flex;
+    font-size: 50px;
+    opacity: 0.8;
+    margin-left: 610px;
+    margin-top: 40px; }
+  .trip-details .travelers {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 70px 30px 70px; }
+    .trip-details .travelers span {
+      display: flex;
+      flex-direction: initial;
+      align-items: flex-end;
+      justify-content: center; }
+      .trip-details .travelers span h3 {
+        margin-right: 20px; }
+      .trip-details .travelers span .guest {
+        font-size: 45px; }
+    .trip-details .travelers .travelers_selector {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-size: 22px;
+      font-style: italic;
+      width: 100%;
+      margin-top: 15px; }
+  .trip-details .travelers_calendar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .trip-details .travelers_calendar .p {
+      display: flex;
+      flex-direction: column; }
+
+.submit {
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 6px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .submit .submit-text {
+    font-size: 28px;
+    display: flex; }
+
+.validation {
+  color: #bd2d2d; }
+
+.error-modal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #bd2d2d;
+  text-align: left;
+  list-style-type: disc;
+  list-style-position: inside; }
+  .error-modal li {
+    display: block; }
+
+.btn {
+  padding: 19px 17px;
+  background: #23272f;
+  display: inline-block;
+  margin-top: 26px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: inherit; }
+  .btn.big {
+    background-color: #23272f;
+    min-width: 200px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px; }
+
+.modal-trip {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: #1a1a1a;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 20px solid transparent;
+  box-sizing: border-box; }
+  .modal-trip.active {
+    display: flex; }
+  .modal-trip .number {
+    display: none;
+    margin-top: 23px; }
+    .modal-trip .number.active {
+      display: block; }
+
+#map {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: none; }
+  #map.active {
+    display: block; }
+
+.travelers_calendar {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  justify-content: space-between; }
+  .travelers_calendar p {
+    width: 48%; }
+
+.booking-item {
+  margin-bottom: 60px; }
+  .booking-item h3 {
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-weight: 300; }
+    .booking-item h3 span {
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 13px;
+      opacity: 0.6; }
+
+#form-planner {
+  border: 20px solid transparent;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh; }
+  #form-planner h2 {
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center; }
+    #form-planner h2 small {
+      font-size: 14px;
+      margin-left: 12px; }
+  #form-planner .input-wrap {
+    width: 100%; }
+  #form-planner p {
+    opacity: 0.8;
+    line-height: 21px; }
+  #form-planner form label {
+    text-transform: uppercase;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1.2px; }
+  #form-planner form input,
+  #form-planner form select {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 6px;
+    margin-top: 5px;
+    border: 0px; }
+  #form-planner form .form-text_select {
+    opacity: 0.8;
+    margin-top: 60px;
+    margin-bottom: 10px; }
+  #form-planner form .select-container select {
+    width: 50%; }
+  #form-planner form .tag {
+    display: inline-block;
+    background: #2d2d2d;
+    padding: 11px 22px;
+    font-size: 12px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    margin: 5px 2px; }
+    #form-planner form .tag span {
+      text-transform: lowercase;
+      background: #3e3e3e;
+      width: 17px;
+      height: 17px;
+      border-radius: 100px;
+      display: inline-block;
+      position: relative;
+      top: 0px;
+      left: 6px;
+      text-align: center;
+      margin-left: 9px;
+      font-size: 10px;
+      line-height: 18px;
+      font-weight: 800;
+      color: chocolate; }
+
+.swiper-container {
+  width: 100%;
+  height: 325px;
+  display: block; }
+  .swiper-container.active {
+    display: none; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .swiper-slide .img-swiper-slide {
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
